@@ -11,7 +11,7 @@
   <body>
     <header>
       <nav class="menu">
-        <ul>
+        <ul class="container">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#portfolio">Portfólio</a></li>
           <li><a href="#contato">Contato</a></li>
@@ -22,24 +22,72 @@
         <h2 class="site-subtitle">frontend developer</h2>
       </div>  
     </header>
-    <section class="portfolio" id="portfolio">
+    <section class="sobre container" id="sobre">
+      <h2>Sobre</h2>
+      <figure class="avatar">
+        <img src="img/avatar.png" alt="Karina Ponte">
+      </figure>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus nam alias ipsa quisquam aut nesciunt provident, quidem vel fugiat doloremque rem excepturi adipisci tempore eligendi in saepe magni nobis iusto.  
+      </p>
+      <p>
+        In, distinctio? Nisi reiciendis expedita corporis dolorem, hic at modi pariatur ab maiores veritatis neque, similique sit tempora fugiat iure in laborum quod, perferendis accusantium illum sed debitis! Omnis, quia.
+      </p>
+      <p>
+        Illum mollitia hic fugit quaerat repellendus corrupti deserunt, sit rem non quo animi excepturi esse doloribus id molestias soluta architecto minus magnam numquam beatae. Perspiciatis reiciendis suscipit dicta quas itaque.
+      </p>
+      <p>
+        Necessitatibus pariatur eos adipisci assumenda dicta tempora nemo magnam itaque, quia dignissimos voluptas error hic iusto repellat aliquam quas. Repudiandae recusandae ullam tempore omnis possimus sapiente odio voluptatem, in delectus.
+      </p>
+      <p>  
+        Perspiciatis quidem nulla mollitia beatae natus eligendi consequatur recusandae maiores atque, veritatis quia voluptatum cumque impedit aspernatur praesentium vero, exercitationem possimus at sint! Corporis alias, corrupti laudantium architecto quaerat id.
+      </p>
+      <p>
+        Repellat soluta praesentium perspiciatis delectus, qui dolor recusandae eius nostrum animi dolores ab voluptate cupiditate itaque facere nemo expedita nulla autem? Deleniti, cupiditate possimus ex delectus eos enim iusto inventore?
+      </p>
+      <p>
+        Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a> ;)
+      </p>  
+    </section>
+    <section class="portfolio container" id="portfolio">
       <h2>Portfólio</h2>
       <div class="grid">
-        <figure>
-          <img class="img-portfolio" src="https://via.placeholder.com/150" alt="Mobile" title="Mobile">
-          <figcaption>Mobile</figcaption>
-        </figure>
-        <figure>
-          <img class="img-portfolio" src="https://via.placeholder.com/150" alt="Web Design" title="Web Design">
-          <figcaption>Web Design</figcaption>
-        </figure>
-        <figure>
-          <img class="img-portfolio" src="https://via.placeholder.com/150" alt="Projetos Pessoais" title="Projetos Pessoais">
-          <figcaption>Projetos Pessoais</figcaption>
-        </figure>
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="https://via.placeholder.com/260x150" alt="Mobile" title="Mobile">
+              <figcaption>Mobile</figcaption>
+            </figure>
+            <div class="card-back">
+              Aqui está a parte de trás do card Mobile
+            </div>
+          </div>    
+        </div>
+        <div class="flip-card">  
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="https://via.placeholder.com/260x150" alt="Web Design" title="Web Design">
+              <figcaption>Web Design</figcaption>
+            </figure>
+            <div class="card-back">
+              Aqui está a parte de trás do card Web Design
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">  
+          <div class="card">    
+            <figure class="card-front">
+              <img class="img-portfolio" src="https://via.placeholder.com/260x150" alt="Projetos Pessoais" title="Projetos Pessoais">
+              <figcaption>Projetos Pessoais</figcaption>
+            </figure>
+            <div class="card-back">
+              Aqui está a parte de trás do card Projetos Pessoais
+            </div>
+          </div>
+        </div>        
       </div>
     </section>
-    <section class="contato" id="contato">
+    <section class="contato container" id="contato">
       <h2>Contato</h2>
 	    <div class="grid icons">
         <a href="https://github.com/karinaponte" target="_blank" alt="github" title="github">
