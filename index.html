@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karina Ponte</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Libre+Baskerville&family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oxygen+Mono&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/49bd10bbd6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/css-doodle@0.8.5/css-doodle.min.js"></script>
+    <css-doodle>
+      :doodle {
+        @grid: 18 / 100vmax;
+        background: #0a0c27;
+        position: fixed;
+        z-index: -1;
+      }
+      --hue: calc(180 + 1.5 * @row * @col);
+      background: hsl(var(--hue), 50%, 70%);
+      margin: -.5px;
+      clip-path: polygon(@pick(
+        '0 0, 100% 0, 100% 100%',
+        '0 0, 100% 0, 0 100%',
+        '0 0, 100% 100%, 0 100%',
+        '100% 0, 100% 100%, 0 100%'
+      ));
+    </css-doodle>
   </head>
   <body>
     <header>
@@ -19,7 +37,7 @@
       </nav>
       <div class="titulo">
         <h1 class="site-title">Karina Ponte</h1>
-        <h2 class="site-subtitle">frontend developer</h2>
+        <h2 class="site-subtitle"> { frontend developer }</h2>
       </div>  
     </header>
     <section class="sobre container" id="sobre">
@@ -28,26 +46,20 @@
         <img src="img/avatar.png" alt="Karina Ponte">
       </figure>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus nam alias ipsa quisquam aut nesciunt provident, quidem vel fugiat doloremque rem excepturi adipisci tempore eligendi in saepe magni nobis iusto.  
+        Formada como bacharel em Ciência da Computação e Biologia, e com formação específica em Gestão de Sistemas de Informação, dedicada aos estudos e sobretudo a aprender coisas novas.
       </p>
       <p>
-        In, distinctio? Nisi reiciendis expedita corporis dolorem, hic at modi pariatur ab maiores veritatis neque, similique sit tempora fugiat iure in laborum quod, perferendis accusantium illum sed debitis! Omnis, quia.
+        Entusiasta por tecnologia desde criança, tive meu primeiro contato com um computador aos 3 anos de idade através do meu pai, desde então o interesse só cresceu. Na adolescência programei meu próprio blog, onde tudo era desenvolvido por mim, desde a interface: o template; seções; Ícones e gifs; entre outros, bem como o desenvolvimento dos códigos em HTML que aprendi por conta própria procurando na internet. Ao concluir o ensino médio já entrei no ano seguinte para a faculdade de Ciência da Computação onde aprendi muito e pude contribuir no meu trabalho e em projetos pessoais que desenvolvi como hobby.
       </p>
       <p>
-        Illum mollitia hic fugit quaerat repellendus corrupti deserunt, sit rem non quo animi excepturi esse doloribus id molestias soluta architecto minus magnam numquam beatae. Perspiciatis reiciendis suscipit dicta quas itaque.
+        Anos depois surgiu o interesse em fazer faculdade de Biologia, sempre fui apaixonada por animais, me dediquei novamente aos estudos agora em uma nova área totalmente diferente da primeira, onde pude contribuir como voluntária em algumas instituições, aprender os conteúdos desenvolvidos durante o decorrer do curso e crescer pessoalmente ao ser representante de classe.
       </p>
       <p>
-        Necessitatibus pariatur eos adipisci assumenda dicta tempora nemo magnam itaque, quia dignissimos voluptas error hic iusto repellat aliquam quas. Repudiandae recusandae ullam tempore omnis possimus sapiente odio voluptatem, in delectus.
-      </p>
-      <p>  
-        Perspiciatis quidem nulla mollitia beatae natus eligendi consequatur recusandae maiores atque, veritatis quia voluptatum cumque impedit aspernatur praesentium vero, exercitationem possimus at sint! Corporis alias, corrupti laudantium architecto quaerat id.
+        Hoje viso me recolocar no mercado de trabalho atuando na área de tecnologia como desenvolvedora frontend, e também desenvolver projetos pessoais que integrem estas duas áreas de formação. 
       </p>
       <p>
-        Repellat soluta praesentium perspiciatis delectus, qui dolor recusandae eius nostrum animi dolores ab voluptate cupiditate itaque facere nemo expedita nulla autem? Deleniti, cupiditate possimus ex delectus eos enim iusto inventore?
-      </p>
-      <p>
-        Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a> ;)
-      </p>  
+        Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a> 🧡
+      </p> 
     </section>
     <section class="portfolio container" id="portfolio">
       <h2>Portfólio</h2>
@@ -55,33 +67,33 @@
         <div class="flip-card">
           <div class="card">
             <figure class="card-front">
-              <img class="img-portfolio" src="https://via.placeholder.com/260x150" alt="Mobile" title="Mobile">
+              <img class="img-portfolio" src="https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Mobile" title="Mobile">
               <figcaption>Mobile</figcaption>
             </figure>
             <div class="card-back">
-              Aqui está a parte de trás do card Mobile
+              [Exemplo] Mobile
             </div>
           </div>    
         </div>
         <div class="flip-card">  
           <div class="card">
             <figure class="card-front">
-              <img class="img-portfolio" src="https://via.placeholder.com/260x150" alt="Web Design" title="Web Design">
+              <img class="img-portfolio" src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Web Design" title="Web Design">
               <figcaption>Web Design</figcaption>
             </figure>
             <div class="card-back">
-              Aqui está a parte de trás do card Web Design
+              [Exemplo] Web Design
             </div>
           </div>
         </div>
         <div class="flip-card">  
           <div class="card">    
             <figure class="card-front">
-              <img class="img-portfolio" src="https://via.placeholder.com/260x150" alt="Projetos Pessoais" title="Projetos Pessoais">
+              <img class="img-portfolio" src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Projetos Pessoais" title="Projetos Pessoais">
               <figcaption>Projetos Pessoais</figcaption>
             </figure>
             <div class="card-back">
-              Aqui está a parte de trás do card Projetos Pessoais
+              [Exemplo] Projetos
             </div>
           </div>
         </div>        
@@ -108,5 +120,7 @@
         </a>
       </div>
     </section>
+    <footer>
+    </footer> 
   </body>
 </html>
